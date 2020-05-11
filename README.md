@@ -23,4 +23,5 @@ If you are done with that note or task, you can click the delete button next to 
 ## Additional Information
 
 Author: ryntm / Trilogy
+
 Github: https://github.com/ryntm/note-taker-time

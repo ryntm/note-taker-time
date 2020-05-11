@@ -60,8 +60,8 @@ app.delete('/api/notes/:id', (req, res) => {
 
 
 
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, './public/index.html'));
-// });
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
 
 app.listen(port, () => console.log(`App is listening on port: ${port}`))

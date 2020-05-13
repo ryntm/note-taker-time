@@ -1,14 +1,24 @@
 {
-  "name": "note-taker",
+  "name": "note-taker-time",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app is will help organize your notes. Title your notes and then include any addition information that you.",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryntm/note-taker-time.git"
+  },
+  "author": "ryntm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryntm/note-taker-time/issues"
+  },
+  "homepage": "https://github.com/ryntm/note-taker-time#readme"
 }

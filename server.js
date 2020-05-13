@@ -5,8 +5,6 @@ const fs = require('fs');
 
 const app = express();
 
-
-
 let id = 1000;
 const dbFile = './db'
 
@@ -57,8 +55,6 @@ app.delete('/api/notes/:id', (req, res) => {
         }
     })
 })
-
-
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));

@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const port = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 const fs = require('fs');
 
 const app = express();
@@ -9,8 +9,8 @@ let id = 1000;
 const dbFile = './db'
 
 // BOILER PLATE
-app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 app.use(express.static("public"));
 //
 
@@ -60,4 +60,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
-app.listen(port, () => console.log(`App is listening on port: ${port}`))
+app.listen(PORT, () => {
+    console.log(`App is listening on port: ${port}`)
+})
